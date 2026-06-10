@@ -3,3 +3,4 @@ __pycache__/
 *.db
 models/
 .venv/
+api_keys.yml
