@@ -34,3 +34,5 @@ A1.1: Answer: Yes, but if you want to receive a certificate, you need to submit 
 
 -------------------------
 + Active env: $ source venv/bin/activate
+
++ run the code: $ 

@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 # from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from google import genai
 from google.genai import types
+from minsearch import Index
 load_dotenv()
 
 # Access your environment variables
@@ -22,27 +23,6 @@ client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 # )
 # response = llm.invoke("I just discovered the course. Can I join now?")
 # print(response.text)
-
-# docs_url = 'https://datatalks.club/faq/json/courses.json'
-# response = requests.get(docs_url)
-# courses_raw = response.json()
-
-# # print(courses_raw)
-
-# documents = []
-# url_prefix = 'https://datatalks.club/faq'
-
-# for course in courses_raw:
-#     course_url = f'{url_prefix}{course['path']}'
-
-#     course_response = requests.get(course_url)
-#     course_response.raise_for_status()
-#     course_data = course_response.json()
-
-#     documents.extend(course_data)
-
-# print("Length of documents", len(documents))
-# print("Show inside documents", documents[1100])
 
 def llm_call(prompt: str) -> str:
     client = genai.Client()
@@ -110,4 +90,36 @@ Context:
 '''
 
 answer = llm_call(prompt)
-print("Answer:", answer)
+# print("Answer:", answer)
+
+
+docs_url = 'https://datatalks.club/faq/json/courses.json'
+response = requests.get(docs_url)
+courses_raw = response.json()
+
+# print(courses_raw)
+
+documents = []
+url_prefix = 'https://datatalks.club/faq'
+
+for course in courses_raw:
+    course_url = f'{url_prefix}{course['path']}'
+
+    course_response = requests.get(course_url)
+    course_response.raise_for_status()
+    course_data = course_response.json()
+
+    documents.extend(course_data)
+
+# len(documents)
+# print("Length of documents", len(documents))
+# print("Show inside documents", documents[1100])
+
+index = Index(
+    text_fields = ['question', 'section', 'answer'],
+    keyword_fields = ['course']
+)
+
+index.fit(documents)
+
+index.search(question)
