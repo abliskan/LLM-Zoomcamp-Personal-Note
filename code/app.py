@@ -122,4 +122,64 @@ index = Index(
 
 index.fit(documents)
 
-index.search(question)
+# search_results = index.search(question, 
+#              filter_dict={'course': 'llm-zoomcamp'},
+#              num_results=5
+# )
+
+def search (question: str, course: str='llm-zoomcamp'):
+    boost_dict = {'question': 2.0, 'section': 0.5}
+    filter_dict = {'course': course}
+    
+    return index.search(
+        question, 
+        boost_dict=boost_dict,
+        filter_dict=filter_dict,
+        num_results=5
+    )
+    
+search_results = search(question)
+
+# print("Search results:", search_results)
+
+INSTRUCTIONS = '''
+Your task is to answer questions from the course participants
+based on the provided context.
+
+Use the context to find relevant information and provide accurate
+answers. If the answer is not found in the context,
+respond with "I don't know."
+'''
+
+USER_PROMPT_TEMPALATE = '''
+Question:
+{question}
+
+Context:
+{context}
+'''
+
+def build_context(search_results: list[dict]) -> str:
+    lines = []
+    
+    for doc in search_results:
+        lines.append(doc['question'])
+        lines.append('Q: ' + doc['question'])
+        lines.append('A: ' + doc['answer'])
+        lines.append('')
+    
+    return '\n'.join(lines).strip()
+
+# context = build_prompt(search_results)
+# print(context)
+
+def build_prompt(question: str, search_results:list[dict]) -> str:
+    context = build_context(search_results)
+    prompt = USER_PROMPT_TEMPALATE.format(
+        question=question, 
+        context=context
+    )
+    return prompt.strip()
+    
+prompt = build_prompt(question, search_results)
+print("Prompt: ", prompt)

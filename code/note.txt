@@ -1,6 +1,8 @@
 #1 sample
 Q1: I just discovered the course. Can I join now?
-A1: content=[{'type': 'text', 'text': "I would love to help you figure that out! However, since I am an AI assistant, I don't know which specific course you are referring to. \n\nTo give you the right answer, could you let me know:\n\n1. **What is the name of the course?**\n2. **Which website, school, or platform is offering it?** (e.g., Coursera, Udemy, a specific university, or a private creator's website).\n\nOnce you share those details, I can help you figure out if enrollment is still open! \n\n***\n\n**As a general rule of thumb:**\n* **Self-paced online courses** (like those on Udemy, Coursera, or Skillshare) can usually be joined at absolutely any time.\n* **Cohort-based or live courses** (where you learn with a group and have live classes) usually have strict start dates. If it just started, they might still let you join late, but if it's been running for a while, you might have to wait for the next enrollment period.", 'extras': {'signature': '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'}}] additional_kwargs={} response_metadata={'finish_reason': 'STOP', 'model_name': 'gemini-3.5-flash', 'safety_ratings': [], 'model_provider': 'google_genai'} id='lc_run--019eb21a-0528-7d71-ac3d-b19063addf65-0' tool_calls=[] invalid_tool_calls=[] usage_metadata={'input_tokens': 12, 'output_tokens': 713, 'total_tokens': 725, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 490}}
+Output 1: content=[{'type': 'text', 'text': "I would love to help you figure that out! However, since I am an AI assistant, I don't know which specific course you are referring to. \n\nTo give you the right answer, could you let me know:\n\n1. **What is the name of the course?**\n2. **Which website, school, or platform is offering it?** (e.g., Coursera, Udemy, a specific university, or a private creator's website).\n\nOnce you share those details, I can help you figure out if enrollment is still open! \n\n***\n\n**As a general rule of thumb:**\n* **Self-paced online courses** (like those on Udemy, Coursera, or Skillshare) can usually be joined at absolutely any time.\n* **Cohort-based or live courses** (where you learn with a group and have live classes) usually have strict start dates. If it just started, they might still let you join late, but if it's been running for a while, you might have to wait for the next enrollment period.", 'extras': {'signature': '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'}}] additional_kwargs={} response_metadata={'finish_reason': 'STOP', 'model_name': 'gemini-3.5-flash', 'safety_ratings': [], 'model_provider': 'google_genai'} id='lc_run--019eb21a-0528-7d71-ac3d-b19063addf65-0' tool_calls=[] invalid_tool_calls=[] usage_metadata={'input_tokens': 12, 'output_tokens': 713, 'total_tokens': 725, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 490}}
+
+###
 
 Q1.1: 'I just discovered the course. Can I join now?'
 *** With context: '
@@ -30,9 +32,99 @@ Kaggle
 Databricks (possibly)
 Consider using Gemini to discover more options. Be aware that some platforms might have restrictions on what you can and cannot install, so ensure to read what is included in the free vs paid tier.
 '
-A1.1: Answer: Yes, but if you want to receive a certificate, you need to submit your project while submissions are still being accepted.
+Output 1.1: Answer: Yes, but if you want to receive a certificate, you need to submit your project while submissions are still being accepted.
+
+###
+
+Q1.2: 'I just discovered the course. Can I join now?'
+*** With context: index function 
+Output 1.2: [{'id': '74eb249bbf', 'course': 'llm-zoomcamp', 'section': 'General Course-Related Questions', 'question': 'I just discovered the course. Can I still join?', 'answer': 'Yes, but if you want to receive a certificate, you need to submit your project while we’re still accepting submissions.'}, {'id': '977bf7786c', 'course': 'llm-zoomcamp', 'section': 'General Course-Related Questions', 'question': 'Course: I have registered for the LLM Zoomcamp. When can I expect to receive the confirmation email?', 'answer': "You don't need it. You're accepted. You can also just start learning and submitting homework (while the form is open) without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date."}, {'id': '69d122f12e', 'course': 'llm-zoomcamp', 'section': 'General Course-Related Questions', 'question': 'Certificate: Can I follow the course in a self-paced mode and get a certificate?', 'answer': 'No, you can only get a certificate if you finish the course with a "live" cohort.\n\nWe don\'t award certificates for the self-paced mode. The reason is you need to peer-review 3 capstone(s) after submitting your project.\n\nYou can only peer-review projects at the time the course is running; after the form is closed and the peer-review list is compiled.'}, {'id': '04919992b3', 'course': 'llm-zoomcamp', 'section': 'General Course-Related Questions', 'question': 'How should I start the course and follow the weekly workflow?', 'answer': 'Start with the [LLM Zoomcamp docs](https://datatalks.club/docs/courses/llm-zoomcamp/), the [general Zoomcamp logistics docs](https://datatalks.club/docs/courses/zoomcamp-logistics/), and the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp).\n\nYou can start whenever you want. The videos and GitHub materials are available, and the deadlines are listed in the [course management platform](https://courses.datatalks.club/llm-zoomcamp-2026/).\n\nA typical workflow is:\n\n1. Watch the lesson videos.\n2. Work through the lesson notebooks/code.\n3. Read the homework instructions on GitHub.\n4. Submit answers through the course platform before the deadline.\n\nHomework is similar to the lesson flow, but uses a different dataset or slightly different task.'}, {'id': '20c5a1347e', 'course': 'llm-zoomcamp', 'section': 'General Course-Related Questions', 'question': 'Where can I track the LLM Zoomcamp syllabus, deadlines, home
+
+###
+
+Q1.3: USE LOOP INSIDE CUSTOM FUNCTION I
+*** With context: INSTRUCTIONS AND USER_PROMPT_TEMPALATE
+Output 1.3:
+I just discovered the course. Can I still join?
+Q: I just discovered the course. Can I still join?
+A: Yes, but if you want to receive a certificate, you need to submit your project while we’re still accepting submissions.
+
+Course: I have registered for the LLM Zoomcamp. When can I expect to receive the confirmation email?
+Q: Course: I have registered for the LLM Zoomcamp. When can I expect to receive the confirmation email?
+A: You don't need it. You're accepted. You can also just start learning and submitting homework (while the form is open) without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.
+
+Certificate: Can I follow the course in a self-paced mode and get a certificate?
+Q: Certificate: Can I follow the course in a self-paced mode and get a certificate?
+A: No, you can only get a certificate if you finish the course with a "live" cohort.
+
+We don't award certificates for the self-paced mode. The reason is you need to peer-review 3 capstone(s) after submitting your project.
+
+You can only peer-review projects at the time the course is running; after the form is closed and the peer-review list is compiled.
+
+How should I start the course and follow the weekly workflow?
+Q: How should I start the course and follow the weekly workflow?
+A: Start with the [LLM Zoomcamp docs](https://datatalks.club/docs/courses/llm-zoomcamp/), the [general Zoomcamp logistics docs](https://datatalks.club/docs/courses/zoomcamp-logistics/), and the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp).
+
+You can start whenever you want. The videos and GitHub materials are available, and the deadlines are listed in the [course management platform](https://courses.datatalks.club/llm-zoomcamp-2026/).
+
+A typical workflow is:
+
+1. Watch the lesson videos.
+2. Work through the lesson notebooks/code.
+3. Read the homework instructions on GitHub.
+4. Submit answers through the course platform before the deadline.
+
+Homework is similar to the lesson flow, but uses a different dataset or slightly different task.
+
+When will the course be offered next?
+Q: When will the course be offered next?
+A: Summer 2027.
+
+###
+
+Q1.4: USE LOOP INSIDE CUSTOM FUNCTION II
+*** With context: custom func "build_context" and "build_prompt"
+Output 1.4:
+Prompt:  Question:
+I just discovered the course. Can I join now?
+
+Context:
+I just discovered the course. Can I still join?
+Q: I just discovered the course. Can I still join?
+A: Yes, but if you want to receive a certificate, you need to submit your project while we’re still accepting submissions.
+
+Course: I have registered for the LLM Zoomcamp. When can I expect to receive the confirmation email?
+Q: Course: I have registered for the LLM Zoomcamp. When can I expect to receive the confirmation email?
+A: You don't need it. You're accepted. You can also just start learning and submitting homework (while the form is open) without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.
+
+Certificate: Can I follow the course in a self-paced mode and get a certificate?
+Q: Certificate: Can I follow the course in a self-paced mode and get a certificate?
+A: No, you can only get a certificate if you finish the course with a "live" cohort.
+
+We don't award certificates for the self-paced mode. The reason is you need to peer-review 3 capstone(s) after submitting your project.
+
+You can only peer-review projects at the time the course is running; after the form is closed and the peer-review list is compiled.
+
+How should I start the course and follow the weekly workflow?
+Q: How should I start the course and follow the weekly workflow?
+A: Start with the [LLM Zoomcamp docs](https://datatalks.club/docs/courses/llm-zoomcamp/), the [general Zoomcamp logistics docs](https://datatalks.club/docs/courses/zoomcamp-logistics/), and the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp).
+
+You can start whenever you want. The videos and GitHub materials are available, and the deadlines are listed in the [course management platform](https://courses.datatalks.club/llm-zoomcamp-2026/).
+
+A typical workflow is:
+
+1. Watch the lesson videos.
+2. Work through the lesson notebooks/code.
+3. Read the homework instructions on GitHub.
+4. Submit answers through the course platform before the deadline.
+
+Homework is similar to the lesson flow, but uses a different dataset or slightly different task.
+
+When will the course be offered next?
+Q: When will the course be offered next?
+A: Summer 2027.
 
 -------------------------
-+ Active env: $ source venv/bin/activate
++ Active env: $ source .venv/bin/activate
 
-+ run the code: $ 
++ run the code: $ uv run app.py
