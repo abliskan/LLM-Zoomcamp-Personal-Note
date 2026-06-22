@@ -124,6 +124,22 @@ When will the course be offered next?
 Q: When will the course be offered next?
 A: Summer 2027.
 
+###
+
+<> Date: 22 June 2026
+Check ouput AI model token:
+Prompt (Input) Tokens: 560
+Candidates (Output) Tokens: 30
+Total Tokens Used: 906
+
+<> Date: 22 June 2026
+Prompt (Input) Tokens: 560
+Candidates (Output) Tokens: 29
+Total Tokens Used: 911
+Prompt Tokens: 560
+Candidate Tokens: 29
+Current API Cost: $0.000550
+
 -------------------------
 + Active env: $ source .venv/bin/activate
 

@@ -35,7 +35,7 @@ def llm_call(prompt: str) -> str:
     )
     
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-3.5-flash',
         contents=prompt,
         config=types.GenerateContentConfig(
             system_instruction=system_instruction,
@@ -89,7 +89,7 @@ Context:
 {context}
 '''
 
-answer = llm_call(prompt)
+# answer = llm_call(prompt)
 # print("Answer:", answer)
 
 
@@ -182,4 +182,57 @@ def build_prompt(question: str, search_results:list[dict]) -> str:
     return prompt.strip()
     
 prompt = build_prompt(question, search_results)
-print("Prompt: ", prompt)
+# print("Prompt: ", prompt)
+
+# Generate a response from the model
+response = client.models.generate_content(
+        model='gemini-3.5-flash',
+        contents=prompt
+)
+
+# Extract token usage from metadata
+usage = response.usage_metadata
+prompt_tokens = usage.prompt_token_count
+candidate_tokens = usage.candidates_token_count
+
+# Print individual metrics
+# print(f"Prompt (Input) Tokens: {prompt_tokens}")
+# print(f"Candidates (Output) Tokens: {candidate_tokens}")
+# print(f"Total Tokens Used: {usage.total_token_count}")
+
+# Define pricing (per million tokens)
+input_price = 0.75 / 1_000_000
+output_price = 4.50 / 1_000_000
+
+# Calculate total cost
+cost = (prompt_tokens * input_price) + (candidate_tokens * output_price)
+
+# Display results
+# print(f"Current API Cost: ${cost:.6f}")
+
+message_history = [
+    {'role': 'developer', 'content': INSTRUCTIONS},
+    {'role': 'user', 'content': prompt}
+]
+
+def llm_check(instructions, user_prompt, model='gemini-3.5-flash'):
+    message_history = [
+        {'role': 'developer', 'content': instructions},
+        {'role': 'user', 'content': user_prompt}
+    ]
+
+    response = client.models.generate_content(
+        model=model,
+        contents=message_history
+
+    )
+    return response.text
+
+def rag(query, model='gemini-3.5-flash'):
+    search_results = search(query)
+    prompt = build_prompt(query, search_results)
+    answer = llm_check(INSTRUCTIONS, prompt, model=model)
+    return answer
+
+answer = rag(question)
+print(answer)
