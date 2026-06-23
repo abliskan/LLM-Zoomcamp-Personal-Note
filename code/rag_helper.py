@@ -1,3 +1,9 @@
+import os
+from google import genai
+from dotenv import load_dotenv
+load_dotenv()
+client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
+
 INSTRUCTIONS = '''
 Your task is to answer questions from the course participants
 based on the provided context.
@@ -67,9 +73,9 @@ class RAGBase:
             {'role': 'user', 'content': prompt}
         ]
 
-        response = self.llm_client.responses.create(
+        response = client.models.generate_content(
             model=self.model,
-            input=input_messages
+            contents=input_messages
         )
 
         return response.output_text

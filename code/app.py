@@ -224,7 +224,6 @@ def llm_check(instructions, user_prompt, model='gemini-3.5-flash'):
     response = client.models.generate_content(
         model=model,
         contents=message_history
-
     )
     return response.text
 

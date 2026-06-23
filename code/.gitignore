@@ -4,3 +4,7 @@ __pycache__/
 models/
 .venv/
 api_keys.yml
+faq.db*
+*.db
+*.db-shm
+*.db-wal
