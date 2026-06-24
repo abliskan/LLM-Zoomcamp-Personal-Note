@@ -39,12 +39,13 @@ for file in files:
 
 ## Q1. How many lesson pages
 
-How many lesson pages are in the dataset?
+How many lesson pages are in the dataset? <br>
+(1) 24 <br>
+(2) 72 <br>
+(3) 240 <br>
+(4) 720 <br>
 
-* 24
-* 72
-* 240
-* 720
+--> My Answer: option number 4
 
 ## Q2. Indexing and searching
 
@@ -53,12 +54,13 @@ Index the documents with minsearch - make `content` a text field and
 
 > How does the agentic loop keep calling the model until it stops?
 
-What's the `filename` of the first result?
+What's the `filename` of the first result? <br>
+(1) `01-agentic-rag/lessons/03-rag.md` <br>
+(2) `01-agentic-rag/lessons/14-agentic-loop.md` <br>
+(3) `04-evaluation/lessons/13-llm-as-judge.md` <br>
+(4) `06-best-practices/lessons/02-hybrid-search.md` <br>
 
-* `01-agentic-rag/lessons/03-rag.md`
-* `01-agentic-rag/lessons/14-agentic-loop.md`
-* `04-evaluation/lessons/13-llm-as-judge.md`
-* `06-best-practices/lessons/02-hybrid-search.md`
+--> My Answer: option number 2
 
 ## Q3. RAG
 
@@ -82,12 +84,13 @@ Build a RAG over the index from Q2 and answer the query:
 > How does the agentic loop keep calling the model until it stops?
 
 Use gpt-5.4-mini. How many input (prompt) tokens did we send to the model for
-this request?
+this request? <br>
+(1) 700 <br>
+(2) 7000 <br>
+(3) 70000 <br>
+(4) 700000 <br>
 
-* 700
-* 7000
-* 70000
-* 700000
+--> My Answer: option number 2
 
 We count input tokens instead of price because the cost depends on the model
 and provider you use, but the size of the prompt we send is the same for
@@ -134,12 +137,13 @@ With `size=2000` and `step=1000` (you can see the implementation
 - Every chunk keeps the original fields (`filename`) and adds `start` (the
   offset in the page) and `content` (the chunk text).
 
-How many chunks do you get?
+How many chunks do you get? <br>
+(1) 70 <br>
+(2) 295 <br>
+(3) 1100 <br>
+(4) 4500 <br>
 
-* 70
-* 295
-* 1100
-* 4500
+--> My Answer: option number 2
 
 ## Q5. RAG with chunking
 
@@ -151,13 +155,13 @@ Index the chunks from Q4 (same as before: `content` as a text field,
 answer the same query again - reading the input tokens the same way as in Q3.
 
 Compare the input tokens with Q3. How many fewer input tokens does the chunked
-version send?
+version send? <br>
+(1) about the same <br>
+(2) 3× fewer <br>
+(3) 10× fewer <br>
+(4) 30× fewer <br>
 
-* about the same
-* 3× fewer
-* 10× fewer
-* 30× fewer
-
+--> My Answer: option number 2
 
 ## Q6. Turning it into an agent
 
@@ -190,13 +194,14 @@ Ask it:
 The agent decides on its own when to search and when to answer. Count how many
 times it called the `search` tool.
 
-How many times did the agent call `search`?
+How many times did the agent call `search`? <br>
 
 > Note: the agent decides this itself, so it varies a little between runs -
 > pick the closest option. We measured this with OpenAI `gpt-5.4-mini`; with a
-> different model or provider the number may differ, so keep that in mind.
+> different model or provider the number may differ, so keep that in mind. <br>
+(1) 0 <br>
+(2) 4 <br>
+(3) 10 <br>
+(4) 20 <br>
 
-* 0
-* 4
-* 10
-* 20
+--> My Answer: option number 2
