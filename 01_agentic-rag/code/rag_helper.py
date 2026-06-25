@@ -72,6 +72,8 @@ class RAGBase:
             {'role': 'developer', 'content': self.instructions},
             {'role': 'user', 'content': prompt}
         ]
+        
+        # response = self.chat_session.send_message(input_messages)
 
         response = client.models.generate_content(
             model=self.model,
