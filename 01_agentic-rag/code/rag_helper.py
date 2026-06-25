@@ -1,5 +1,6 @@
 import os
 from google import genai
+from google.genai import types
 from dotenv import load_dotenv
 load_dotenv()
 client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
@@ -68,19 +69,29 @@ class RAGBase:
         )
 
     def llm(self, prompt):
+        config = types.GenerateContentConfig(
+            system_instruction=self.instructions,
+            temperature=0.2 # Optional payload configuration
+        )
+        
         input_messages = [
-            {'role': 'developer', 'content': self.instructions},
-            {'role': 'user', 'content': prompt}
+        types.Content(
+            role="user",
+            parts=[types.Part.from_text(text=prompt)]
+        ),
+        types.Content(
+            role="developer",
+            parts=[types.Part.from_text(text=self.instructions)]
+        )
         ]
         
-        # response = self.chat_session.send_message(input_messages)
-
         response = client.models.generate_content(
             model=self.model,
-            contents=input_messages
+            contents=input_messages,
+            config=config
         )
 
-        return response.output_text
+        return response.text
 
     def rag(self, query):
         search_results = self.search(query)
