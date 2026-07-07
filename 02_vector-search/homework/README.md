@@ -6,13 +6,14 @@ Embed the following query:
 
 > How does approximate nearest neighbor search work?
 
-The embedder returns a vector of 384 numbers. What's the first value
-(`v[0]`)?
+The embedder returns a vector of 384 numbers. What's the first value <br>
+(`v[0]`)? <br>
+(1) -0.31 <br>
+(2) -0.02 <br>
+(3) 0.12 <br>
+(4) 0.44 <br>
 
-* -0.31
-* -0.02
-* 0.12
-* 0.44
+--> My Answer: option number 2
 
 ## Loading the data
 
@@ -44,12 +45,13 @@ of them is their cosine similarity.
 
 Take the page `02-vector-search/lessons/07-sqlitesearch-vector.md`, embed
 its `content`, and compute the cosine similarity with the query vector
-from Q1. What do you get?
+from Q1. What do you get? <br>
+(1) 0.07 <br>
+(2) 0.37 <br>
+(3) 0.68 <br>
+(4) 0.92 <br>
 
-* 0.07
-* 0.37
-* 0.68
-* 0.92
+--> My Answer: option number 2 (0.36)
 
 ## Q3. Chunking and search by hand
 
@@ -69,12 +71,13 @@ into a matrix `X`, and score the Q1 query against all chunks:
 scores = X.dot(v)
 ```
 
-Which file does the highest-scoring chunk belong to (its `filename`)?
+Which file does the highest-scoring chunk belong to (its `filename`)? <br>
+(1) `02-vector-search/lessons/03-embeddings-dataset.md` <br>
+(2) `02-vector-search/lessons/06-rag-vector.md` <br>
+(3) `02-vector-search/lessons/07-sqlitesearch-vector.md` <br>
+(4) `02-vector-search/lessons/09-onnx-embedder.md` <br>
 
-* `02-vector-search/lessons/03-embeddings-dataset.md`
-* `02-vector-search/lessons/06-rag-vector.md`
-* `02-vector-search/lessons/07-sqlitesearch-vector.md`
-* `02-vector-search/lessons/09-onnx-embedder.md`
+--> My Answer: option number 3
 
 ## Q4. Vector search with minsearch
 
@@ -86,12 +89,13 @@ query:
 
 > What metric do we use to evaluate a search engine?
 
-Which file is the `filename` of the first result?
+Which file is the `filename` of the first result? <br>
+(1) `02-vector-search/lessons/04-vector-search.md` <br>
+(2) `04-evaluation/lessons/05-search-metrics.md` <br>
+(3) `04-evaluation/lessons/13-llm-as-judge.md` <br>
+(4) `05-monitoring/lessons/04-metrics.md` <br>
 
-* `02-vector-search/lessons/04-vector-search.md`
-* `04-evaluation/lessons/05-search-metrics.md`
-* `04-evaluation/lessons/13-llm-as-judge.md`
-* `05-monitoring/lessons/04-metrics.md`
+--> My Answer: option number 2
 
 ## Q5. Text search vs vector search
 
@@ -106,12 +110,13 @@ Run both searches for this query:
 > How do I store vectors in PostgreSQL?
 
 Take the top 5 results from each method. Which file shows up in the
-vector results but not in the text results?
+vector results but not in the text results? <br>
+(1) `02-vector-search/lessons/01-intro.md` <br>
+(2) `02-vector-search/lessons/02-embeddings.md` <br>
+(3) `02-vector-search/lessons/08-pgvector.md` <br>
+(4) `03-orchestration/lessons/05-rag.md` <br>
 
-* `02-vector-search/lessons/01-intro.md`
-* `02-vector-search/lessons/02-embeddings.md`
-* `02-vector-search/lessons/08-pgvector.md`
-* `03-orchestration/lessons/05-rag.md`
+--> My Answer: option number 3
 
 ## Q6. Hybrid search
 
@@ -177,12 +182,13 @@ with vector and text search and fuse the results with `rrf`:
 results = rrf([vector_results, text_results])
 ```
 
-Which file is ranked first after RRF?
+Which file is ranked first after RRF? <br>
+(1) `01-agentic-rag/lessons/01-intro.md` <br>
+(2) `01-agentic-rag/lessons/13-function-calling.md` <br>
+(3) `01-agentic-rag/lessons/14-agentic-loop.md` <br>
+(4) `01-agentic-rag/lessons/16-other-frameworks.md` <br>
 
-* `01-agentic-rag/lessons/01-intro.md`
-* `01-agentic-rag/lessons/13-function-calling.md`
-* `01-agentic-rag/lessons/14-agentic-loop.md`
-* `01-agentic-rag/lessons/16-other-frameworks.md`
+--> My Answer: option number 2
 
 Notice that this file isn't first in either search on its own - it wins
 because it ranks high in both.
