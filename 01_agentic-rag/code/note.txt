@@ -144,3 +144,5 @@ Current API Cost: $0.000550
 + Active env: $ source .venv/bin/activate
 
 + run the code: $ uv run app.py
+
++ install all dependencies on uv: $ uv add numpy pandas matplotlib jupyter google-genai python-dotenv sqlitesearch sentence-transformers minsearch pydantic tqdm
