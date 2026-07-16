@@ -31,7 +31,7 @@ class RAGBase:
         instructions=INSTRUCTIONS,
         prompt_template=PROMPT_TEMPLATE,
         course='llm-zoomcamp',
-        model='gemini-2.5-flash'
+        model='gemini-3.5-flash'
     ):
         self.index = index
         self.llm_client = llm_client

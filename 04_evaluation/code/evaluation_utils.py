@@ -9,7 +9,7 @@ load_dotenv()
 client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
-def llm_structured(client, instructions, user_prompt, output_type, model="gemini-2.5-flash"):
+def llm_structured(client, instructions, user_prompt, output_type, model="gemini-3.5-flash"):
     messages = [
         types.Content(
             role="user",
@@ -39,7 +39,7 @@ def llm_structured_retry(
     instructions,
     user_prompt,
     output_type,
-    model="gemini-2.5-flash",
+    model="gemini-3.5-flash",
     max_retries=3,
 ):
     for attempt in range(max_retries):
@@ -99,8 +99,8 @@ class RAGWithUsage(RAGBase):
 
         return response.text
 
-    def total_cost(self):
-        return calc_total_price(self.usages)
+    # def total_cost(self):
+    #     return calc_total_price(self.usages)
 
 
 def map_progress(pool, seq, f):
