@@ -4,8 +4,8 @@ import os
 from dotenv import load_dotenv
 from ingest import load_faq_data, build_index
 from rag_helper import RAGBase
+from metrics import RAGWithMetrics
 from google import genai
-from google.genai import types
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 def create_assistant():
@@ -14,7 +14,7 @@ def create_assistant():
     documents = load_faq_data()
     index = build_index(documents)
 
-    return RAGBase(
+    return RAGWithMetrics(
         index=index,
         llm_client=client,
     )
