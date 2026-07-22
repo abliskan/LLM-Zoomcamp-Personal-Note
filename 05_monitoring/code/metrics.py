@@ -39,7 +39,7 @@ class RAGWithMetrics(RAGBase):
         response = self._call_llm(prompt)
         response_time = time.time() - start_time
         self._log_response(prompt, response, response_time)
-        return response.output_text
+        return response.text
     
     def _call_llm(self, prompt):
         config = types.GenerateContentConfig(
@@ -58,7 +58,7 @@ class RAGWithMetrics(RAGBase):
             contents=input_messages,
             config=config
         )
-        return response.text
+        return response
     
     def _log_response(self, prompt, response, response_time):
         usage = response.usage_metadata
