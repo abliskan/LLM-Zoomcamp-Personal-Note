@@ -19,3 +19,6 @@ postgres: network
 		-p 5432:5432 \
 		-v pgdata:/var/lib/postgresql/data \
 		postgres:17
+
+query:
+	uv run python db_query.py
