@@ -27,7 +27,7 @@ if st.button("Ask"):
         
         relevance, explanation = evaluate_relevance(user_input, answer)
         save_feedback(conversation_id, "judge",
-                        relevance=relevance, explanation=explanation)
+                      relevance=relevance, explanation=explanation)
         st.write(f"Relevance: {relevance}")
         st.write(f"Explanation: {explanation}")
 
