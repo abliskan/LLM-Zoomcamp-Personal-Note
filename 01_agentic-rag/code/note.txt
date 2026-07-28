@@ -141,8 +141,10 @@ Candidate Tokens: 29
 Current API Cost: $0.000550
 
 -------------------------
-+ Active env: $ source .venv/bin/activate
++ Active env: $ source .venv/bin/activate   (linux)
+                .venv\Scripts\activate.bat  (windows)
++ run the default program: $ uv run app.py
+  run the monitoring app: $ uv run streamlit run dashboard.py --server.port 8502
+  run to generate synthetic data in-app: $uv run python generate_data.py
 
-+ run the code: $ uv run app.py
-
-+ install all dependencies on uv: $ uv add numpy pandas matplotlib jupyter google-genai python-dotenv sqlitesearch sentence-transformers minsearch pydantic tqdm
++ install all dependencies on uv: $ uv add gitsource numpy pandas matplotlib jupyter google-genai python-dotenv sqlitesearch sentence-transformers minsearch pydantic tqdm opentelemetry-api opentelemetry-sdk dlt "dlt[duckdb]" logfire
