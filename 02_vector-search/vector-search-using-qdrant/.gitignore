@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.db
+models/
+.venv/
+api_keys.yml
+faq.db*
+*.db
+*.db-shm
+*.db-wal
+qdrant_storage/
